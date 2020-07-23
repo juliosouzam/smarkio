@@ -52,7 +52,7 @@ class StreamController {
 
     const stream = fs.createReadStream(audioFile, { highWaterMark });
 
-    await new Promise((resolv) => stream.on('end', resolv));
+    stream.on('end', () => console.log('acabou'));
 
     stream.pipe(response);
   }
