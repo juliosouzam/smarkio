@@ -22,6 +22,7 @@ class StreamController {
 
     const textToSpeech = new TextToSpeech({
       authenticator: new IamAuthenticator({ apikey: watsonConfig.apiKey }),
+      url: watsonConfig.urlWatson,
     });
 
     const synthesizeParams = {

@@ -32,7 +32,7 @@ $ cd backend
 $ yarn # instalar as dependências
 
 $ cp .env.example .env
-# configure o arquivo .env com a API_KEY do IBM Cloud Text To Speech e o banco de dados MySQL.
+# configure o arquivo .env com a API_KEY e a URL do IBM Cloud Text To Speech e o banco de dados MySQL.
 
 $ yarn sequelize db:migrate # rodar as migrations e criar as tabelas
 
