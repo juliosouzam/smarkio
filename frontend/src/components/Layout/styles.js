@@ -56,15 +56,15 @@ export const AnimationContainer = styled.div`
       margin-top: 10px;
       height: 46px;
       border: 0;
-      background: #cefcc0;
+      background: #250d7b;
       border-radius: 8px;
       transition: background 0.2s;
-      color: #333;
+      color: #fff;
       font-size: 18px;
       font-weight: bold;
 
       &:hover {
-        background: ${darken(0.05, '#cefcc0')};
+        background: ${darken(0.1, '#250d7b')};
       }
     }
   }
