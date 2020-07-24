@@ -1,9 +1,6 @@
 import React, { useCallback, useRef, useState } from 'react';
-import {
-  MdPlayCircleOutline,
-  MdPauseCircleOutline,
-} from 'react-icons/md';
-import { FaCircleNotch } from 'react-icons/fa'
+import { MdPlayCircleOutline, MdPauseCircleOutline } from 'react-icons/md';
+import { FaCircleNotch } from 'react-icons/fa';
 
 import { Container, AnimationContainer, List, Button } from './styles';
 
@@ -38,6 +35,7 @@ function CommentList({ comments }) {
               <span>{comment.comment}</span>
 
               <Button
+                className={!!(idPlaying === comment.id) ? 'active' : ''}
                 loading={String(!!(idPlaying === comment.id && loading) || 0)}
                 type="button"
                 onClick={() => handleStartPlay(comment)}

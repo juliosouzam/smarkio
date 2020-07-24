@@ -1,3 +1,4 @@
+import { darken, lighten } from 'polished';
 import styled, { css, keyframes } from 'styled-components';
 
 export const Container = styled.div`
@@ -62,9 +63,23 @@ export const List = styled.ul`
 `;
 
 export const Button = styled.button`
-  height: 36px;
-  width: 56px;
+  padding: 5px 10px;
+  border-radius: 5px;
   margin-left: 30px;
+  border: 1px solid ${lighten(0.7, '#333')};
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &.active {
+    background: ${darken(0.01, '#063178')};
+
+    svg {
+      fill: #fff;
+    }
+  }
 
   svg {
     ${(props) =>
