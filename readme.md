@@ -1,6 +1,6 @@
-<h2 align="center">
+<h1 align="center">
   Smarkio
-</h2>
+</h1>
 
 ## :mortar_board: Tecnologias
 
